@@ -1,6 +1,6 @@
-# Tauri + React + Typescript
+# Genetic Data Slayer
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Desktop application implementing a genetic algorithm for a specific bioinformatics problem.
 
 ## Recommended IDE Setup
 
