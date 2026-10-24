@@ -29,6 +29,12 @@
               gtk3
               webkitgtk_4_1
               # gio
+
+              # cpp deps
+              cmake
+              ninja
+              gcc
+              gtest
         ];
       };
     };

@@ -1,8 +1,5 @@
 mod instance_generator;
 
-use instance_generator::generate_correct_instance;
-use instance_generator::apply_errors_to_instance;
-
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 #[tauri::command]
 fn greet(name: &str) -> String {
@@ -15,8 +12,8 @@ pub fn run() {
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![
             greet,
-            generate_correct_instance,
-            apply_errors_to_instance
+            instance_generator::generate_correct_instance,
+            instance_generator::apply_errors_to_instance
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
