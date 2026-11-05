@@ -1,3 +1,5 @@
 #pragma once
 
-void mock_computation();
+#include<string>
+
+std::string mock_computation(const std::string& name);

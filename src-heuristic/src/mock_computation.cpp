@@ -1,6 +1,10 @@
-#include "greeting.hpp"
+#include <thread>
+#include <chrono>
 
-std::string make_greeting(const std::string& name)
+#include "mock_computation.hpp"
+
+std::string mock_computation(const std::string& name)
 {
+	std::this_thread::sleep_for(std::chrono::seconds(5));
     return "Hello, " + name + "!";
 }
