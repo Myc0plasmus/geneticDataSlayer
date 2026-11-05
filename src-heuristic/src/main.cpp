@@ -1,9 +1,9 @@
-#include "greeting.hpp"
+#include "mock_computation.hpp"
 
 #include <iostream>
 
 int main()
 {
-    std::cout << make_greeting("world") << '\n';
+	mock_computation();
     return 0;
 }
